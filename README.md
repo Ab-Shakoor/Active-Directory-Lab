@@ -5,6 +5,8 @@
 <h2>Description</h2>
 This is a home lab project where I set up an Active Directory domain using VirtualBox, Windows Server 2019, and a Windows 10 client. I used this lab to explore DNS, DHCP, NAT, PowerShell scripting, and domain management basics.
 
+<b> </b>
+
 Goal: To learn how organizations manage users, computers, and network settings through Active Directory.
 <br />
 

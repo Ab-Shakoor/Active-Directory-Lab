@@ -1,9 +1,9 @@
-<h1>JWipe - Disk Sanitization</h1>
+<h1>Active Directory Home Lab</h1>
 
  ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
 
 <h2>Description</h2>
-This is a home lab project where I set up an Active Directory domain using VirtualBox, Windows Server 2019, and a Windows 10 client. I followed a YouTube tutorial step by step, and used this lab to explore DNS, DHCP, NAT, PowerShell scripting, and domain management basics.
+This is a home lab project where I set up an Active Directory domain using VirtualBox, Windows Server 2019, and a Windows 10 client. I used this lab to explore DNS, DHCP, NAT, PowerShell scripting, and domain management basics.
 
 Goal: To learn how organizations manage users, computers, and network settings through Active Directory.
 <br />
@@ -11,8 +11,13 @@ Goal: To learn how organizations manage users, computers, and network settings t
 
 <h2>Languages and Utilities Used</h2>
 
-- <b>PowerShell</b> 
-- <b>Diskpart</b>
+- <b>VirtualBox</b> 
+- <b>Windows Server 2019 ISO</b>
+- <b>Windows 10 ISO</b>
+- <b>Active Directory Domain Services (AD DS)</b>
+- <b>DHCP</b>
+- <b>NAT / Routing and Remote Access</b>
+- <b>PowerShell</b>
 
 <h2>Environments Used </h2>
 

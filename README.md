@@ -1,14 +1,13 @@
 <h1>Active Directory Home Lab</h1>
 
 
-<h2>Description</h2>
+<h2>Overview</h2>
 This project demonstrates a functional Windows Server 2019 Active Directory lab built using VirtualBox. It simulates a basic enterprise network with a domain controller, DHCP, NAT, and a domain-joined Windows 10 client. A PowerShell script was used to create 1000 users for testing administrative tasks.
 
-<b> </b>
-
-Goal: To learn how organizations manage users, computers, and network settings through Active Directory.
 <br />
 
+<h2>Objective</h2>
+Learn how organizations manage users, computers, and network settings through Active Directory.
 
 <h2>Tools Used</h2>
 
@@ -35,7 +34,7 @@ Goal: To learn how organizations manage users, computers, and network settings t
 <h2>Project walk-through:</h2>
 
 <p align="center">
-DC VM configured with two NICs — NAT for internet access, Internal Network for local domain communication: <br/>
+DC VM configured with two NICs: NAT for internet access, Internal Network for local domain communication: <br/>
 <img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Active Directory Home Lab Steps"/>
 <br />
 <br />

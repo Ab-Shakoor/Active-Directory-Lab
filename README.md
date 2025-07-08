@@ -2,7 +2,7 @@
 
 
 <h2>Description</h2>
-This is a home lab project where I set up an Active Directory domain using VirtualBox, Windows Server 2019, and a Windows 10 client. I used this lab to explore DNS, DHCP, NAT, PowerShell scripting, and domain management basics.
+This project demonstrates a functional Windows Server 2019 Active Directory lab built using VirtualBox. It simulates a basic enterprise network with a domain controller, DHCP, NAT, and a domain-joined Windows 10 client. A PowerShell script was used to create 1000 users for testing administrative tasks.
 
 <b> </b>
 
@@ -10,47 +10,99 @@ Goal: To learn how organizations manage users, computers, and network settings t
 <br />
 
 
-<h2>Languages and Utilities Used</h2>
+<h2>Tools Used</h2>
 
 - <b>VirtualBox</b> 
-- <b>Windows Server 2019 ISO</b>
-- <b>Windows 10 ISO</b>
+- <b>Windows Server 2019</b>
+- <b>Windows 10</b>
 - <b>Active Directory Domain Services (AD DS)</b>
 - <b>DHCP</b>
-- <b>NAT / Routing and Remote Access</b>
+- <b>Routing and Remote Access (NAT)</b>
 - <b>PowerShell</b>
 
+<h2>Key Features</h2>
 
-<h2>Program walk-through:</h2>
+- <b>Configured DC with two NICs (NAT + Internal)</b> 
+- <b>Promoted Server 2019 to Domain Controller with root domain</b>
+- <b>Installed and configured DHCP for internal network</b>
+- <b>Configured NAT using Routing and Remote Access</b>
+- <b>Created 1000 domain users using PowerShell</b>
+- <b>Created organizational units and assigned domain admin</b>
+- <b>Joined Windows 10 client to the domain</b>
+- <b>Tested login with domain account on client VM</b>
+
+
+<h2>Project walk-through:</h2>
 
 <p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+DC VM configured with two NICs — NAT for internet access, Internal Network for local domain communication: <br/>
+<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Active Directory Home Lab Steps"/>
 <br />
 <br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Static IP assigned to internal NIC. This ensures the domain controller can reliably handle DNS and DHCP for the internal network:  <br/>
+<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Active Directory Home Lab Steps"/>
 <br />
 <br />
 Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Active Directory Home Lab Steps"/>
 <br />
 <br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+AD DS installed on Server 2019 to enable domain controller promotion:  <br/>
+<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Active Directory Home Lab Steps"/>
 <br />
 <br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Promoting the server to a domain controller and creating a new root domain:  <br/>
+<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Active Directory Home Lab Steps"/>
 <br />
 <br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Successfully promoted to domain controller. Logged in as domain administrator:  <br/>
+<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Active Directory Home Lab Steps"/>
 <br />
 <br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Created organizational unit to manage admin users separately from standard accounts:  <br/>
+<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Active Directory Home Lab Steps"/>
+<br />
+<br />
+Domain admin account manually created and assigned proper privileges:  <br/>
+<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Active Directory Home Lab Steps"/>
+<br />
+<br />
+Configured DHCP to automatically assign IP addresses to internal network clients:  <br/>
+<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Active Directory Home Lab Steps"/>
+<br />
+<br />
+Windows 10 client successfully obtained IP from DHCP scope via internal network:  <br/>
+<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Active Directory Home Lab Steps"/>
+<br />
+<br />
+NAT enabled on the DC to allow the internal network to access the internet through the external NIC:  <br/>
+<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Active Directory Home Lab Steps"/>
+<br />
+<br />
+Used PowerShell to automate creation of 1000 Active Directory users for simulation and testing:  <br/>
+<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Active Directory Home Lab Steps"/>
+<br />
+<br />
+Users successfully imported into Active Directory using the script:  <br/>
+<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Active Directory Home Lab Steps"/>
+<br />
+<br />
+Windows 10 client VM configured to communicate on internal network with domain controller:  <br/>
+<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Active Directory Home Lab Steps"/>
+<br />
+<br />
+Successfully joined the client VM to the domain created on the DC:  <br/>
+<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Active Directory Home Lab Steps"/>
+<br />
+<br />
+Demonstrating successful domain login from a client device using Active Directory credentials:  <br/>
+<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Active Directory Home Lab Steps"/>
+<br />
+<br />
+Internet access verified from client VM via domain controller’s NAT routing:  <br/>
+<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Active Directory Home Lab Steps"/>
 </p>
+
 
 <!--
  ```diff

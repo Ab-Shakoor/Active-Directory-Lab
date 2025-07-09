@@ -32,73 +32,179 @@ Learn how organizations manage users, computers, and network settings through Ac
 
 
 <h2>Project walk-through:</h2>
+<br/>
 
 <p align="center">
-DC VM configured with two NICs: NAT for internet access, Internal Network for local domain communication: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Active Directory Home Lab Steps"/>
+DC VM configured with two NICs: NAT for internet access, Internal Network for local domain communication: 
+<br/>
+ 
+<br/>
+<img src="https://i.imgur.com/DlKlKgh.png" height="300%" width="80%" alt="Active Directory Home Lab Steps"/>
 <br />
+ 
+<br/>
+<img src="https://imgur.com/RCQtWUN.png" height="300%" width="80%" alt="Active Directory Home Lab Steps"/>
 <br />
-Static IP assigned to internal NIC. This ensures the domain controller can reliably handle DNS and DHCP for the internal network:  <br/>
+
+ 
+<br/>
+
+ 
+<br />
+Static IP assigned to internal NIC. This ensures the domain controller can reliably handle DNS and DHCP for the internal network:  
+<br/>
+
+<br/>
 <img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Active Directory Home Lab Steps"/>
 <br />
+
+<br/>
+
 <br />
-Enter the number of passes: <br/>
+Enter the number of passes: 
+<br/>
+
+<br/>
 <img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Active Directory Home Lab Steps"/>
 <br />
+
+<br/>
+
 <br />
-AD DS installed on Server 2019 to enable domain controller promotion:  <br/>
+AD DS installed on Server 2019 to enable domain controller promotion:  
+<br/>
+
+<br/>
 <img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Active Directory Home Lab Steps"/>
 <br />
+
+<br/>
+
 <br />
-Promoting the server to a domain controller and creating a new root domain:  <br/>
+Promoting the server to a domain controller and creating a new root domain:  
+<br/>
+
+<br/>
 <img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Active Directory Home Lab Steps"/>
 <br />
+
+<br/>
+
 <br />
-Successfully promoted to domain controller. Logged in as domain administrator:  <br/>
+Successfully promoted to domain controller. Logged in as domain administrator:  
+<br/>
+
+<br/>
 <img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Active Directory Home Lab Steps"/>
 <br />
+
+<br/>
+
 <br />
-Created organizational unit to manage admin users separately from standard accounts:  <br/>
+Created organizational unit to manage admin users separately from standard accounts:  
+<br/>
+
+<br/>
 <img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Active Directory Home Lab Steps"/>
 <br />
+
+<br/>
+
 <br />
-Domain admin account manually created and assigned proper privileges:  <br/>
+Domain admin account manually created and assigned proper privileges:  
+<br/>
+
+<br/>
 <img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Active Directory Home Lab Steps"/>
 <br />
+
+<br/>
+
 <br />
-Configured DHCP to automatically assign IP addresses to internal network clients:  <br/>
+Configured DHCP to automatically assign IP addresses to internal network clients:  
+<br/>
+
+<br/>
 <img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Active Directory Home Lab Steps"/>
 <br />
+
+<br/>
+
 <br />
-Windows 10 client successfully obtained IP from DHCP scope via internal network:  <br/>
+Windows 10 client successfully obtained IP from DHCP scope via internal network:  
+<br/>
+
+<br/>
 <img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Active Directory Home Lab Steps"/>
 <br />
+
+<br/>
+
 <br />
-NAT enabled on the DC to allow the internal network to access the internet through the external NIC:  <br/>
+NAT enabled on the DC to allow the internal network to access the internet through the external NIC:  
+<br/>
+
+<br/>
 <img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Active Directory Home Lab Steps"/>
 <br />
+
+<br/>
+
 <br />
-Used PowerShell to automate creation of 1000 Active Directory users for simulation and testing:  <br/>
+Used PowerShell to automate creation of 1000 Active Directory users for simulation and testing:  
+<br/>
+
+<br/>
 <img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Active Directory Home Lab Steps"/>
 <br />
+
+<br/>
+
 <br />
-Users successfully imported into Active Directory using the script:  <br/>
+Users successfully imported into Active Directory using the script:  
+<br/>
+
+<br/>
 <img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Active Directory Home Lab Steps"/>
 <br />
+
+<br/>
+
 <br />
-Windows 10 client VM configured to communicate on internal network with domain controller:  <br/>
+Windows 10 client VM configured to communicate on internal network with domain controller:  
+<br/>
+
+<br/>
 <img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Active Directory Home Lab Steps"/>
 <br />
+
+<br/>
+
 <br />
-Successfully joined the client VM to the domain created on the DC:  <br/>
+Successfully joined the client VM to the domain created on the DC:  
+<br/>
+
+<br/>
 <img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Active Directory Home Lab Steps"/>
 <br />
+
+<br/>
+
 <br />
-Demonstrating successful domain login from a client device using Active Directory credentials:  <br/>
+Demonstrating successful domain login from a client device using Active Directory credentials:  
+<br/>
+
+<br/>
 <img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Active Directory Home Lab Steps"/>
 <br />
+
+<br/>
+
 <br />
-Internet access verified from client VM via domain controller’s NAT routing:  <br/>
+Internet access verified from client VM via domain controller’s NAT routing:  
+<br/>
+
+<br/>
 <img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Active Directory Home Lab Steps"/>
 </p>
 

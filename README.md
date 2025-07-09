@@ -55,7 +55,7 @@ Static IP assigned to internal NIC. This ensures the domain controller can relia
 <br/>
 
 <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Active Directory Home Lab Steps"/>
+<img src="https://i.imgur.com/sWXeEsx.png" height="300%" width="80%" alt="Active Directory Home Lab Steps"/>
 <br />
 
 <br/>

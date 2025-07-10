@@ -85,7 +85,7 @@ Successfully promoted to domain controller. Logged in as domain administrator:
 <br/>
 
 <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="400%" width="80%" alt="Active Directory Home Lab Steps"/>
+<img src="https://i.imgur.com/jjYboJh.png" height="400%" width="80%" alt="Active Directory Home Lab Steps"/>
 <br />
 
 <br/>
@@ -95,108 +95,66 @@ Created organizational unit to manage admin users separately from standard accou
 <br/>
 
 <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="400%" width="80%" alt="Active Directory Home Lab Steps"/>
+<img src="https://i.imgur.com/9Nc1i6a.png" height="400%" width="80%" alt="Active Directory Home Lab Steps"/>
 <br />
 
 <br/>
 
 <br />
-Domain admin account manually created and assigned proper privileges:  
+Enabled NAT on the domain controller using Routing and Remote Access, allowing internal network clients to access the internet:
 <br/>
 
 <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="400%" width="80%" alt="Active Directory Home Lab Steps"/>
+<img src="https://i.imgur.com/zF0h0mJ.png" height="400%" width="80%" alt="Active Directory Home Lab Steps"/>
 <br />
 
 <br/>
 
 <br />
-Configured DHCP to automatically assign IP addresses to internal network clients:  
+Installed DHCP Server role and created a scope to assign IP addresses automatically to internal network clients:  
 <br/>
 
 <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="400%" width="80%" alt="Active Directory Home Lab Steps"/>
+<img src="https://i.imgur.com/lK7rpNk.png" height="400%" width="80%" alt="Active Directory Home Lab Steps"/>
+<br />
+
+<br/>
+<img src="https://i.imgur.com/xpkDndF.png" height="400%" width="80%" alt="Active Directory Home Lab Steps"/>
+<br />
+
+<br/>
+<img src="https://i.imgur.com/sDSDejP.png" height="400%" width="80%" alt="Active Directory Home Lab Steps"/>
 <br />
 
 <br/>
 
 <br />
-Windows 10 client successfully obtained IP from DHCP scope via internal network:  
+Used a PowerShell script to automate the creation of 1000 user accounts for testing purposes:  
 <br/>
 
 <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="400%" width="80%" alt="Active Directory Home Lab Steps"/>
+<img src="https://i.imgur.com/4nreaxz.png" height="400%" width="80%" alt="Active Directory Home Lab Steps"/>
+<br />
+
+<br/>
+<img src="https://i.imgur.com/S7tPFRV.png" height="400%" width="80%" alt="Active Directory Home Lab Steps"/>
 <br />
 
 <br/>
 
 <br />
-NAT enabled on the DC to allow the internal network to access the internet through the external NIC:  
+Created a Windows 10 VM, connected it to the internal network, and successfully joined it to the domain:  
 <br/>
 
 <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="400%" width="80%" alt="Active Directory Home Lab Steps"/>
+<img src="https://i.imgur.com/QD6POsD.png" height="400%" width="80%" alt="Active Directory Home Lab Steps"/>
 <br />
 
 <br/>
-
-<br />
-Used PowerShell to automate creation of 1000 Active Directory users for simulation and testing:  
-<br/>
-
-<br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="400%" width="80%" alt="Active Directory Home Lab Steps"/>
+<img src="https://imgur.com/yCzZ1Wv.png" height="400%" width="80%" alt="Active Directory Home Lab Steps"/>
 <br />
 
 <br/>
-
-<br />
-Users successfully imported into Active Directory using the script:  
-<br/>
-
-<br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="400%" width="80%" alt="Active Directory Home Lab Steps"/>
-<br />
-
-<br/>
-
-<br />
-Windows 10 client VM configured to communicate on internal network with domain controller:  
-<br/>
-
-<br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="400%" width="80%" alt="Active Directory Home Lab Steps"/>
-<br />
-
-<br/>
-
-<br />
-Successfully joined the client VM to the domain created on the DC:  
-<br/>
-
-<br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="400%" width="80%" alt="Active Directory Home Lab Steps"/>
-<br />
-
-<br/>
-
-<br />
-Demonstrating successful domain login from a client device using Active Directory credentials:  
-<br/>
-
-<br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="400%" width="80%" alt="Active Directory Home Lab Steps"/>
-<br />
-
-<br/>
-
-<br />
-Internet access verified from client VM via domain controller’s NAT routing:  
-<br/>
-
-<br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="400%" width="80%" alt="Active Directory Home Lab Steps"/>
-</p>
 
 
 <!--

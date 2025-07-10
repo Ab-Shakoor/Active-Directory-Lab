@@ -35,7 +35,7 @@ Learn how organizations manage users, computers, and network settings through Ac
 <br/>
 
 <p align="center">
-**Configured Windows Server 2019 VM with two network interfaces: one for external internet access (NAT), one for internal domain traffic:**
+<b>Configured Windows Server 2019 VM with two network interfaces: one for external internet access (NAT), one for internal domain traffic:
 <br/>
  
 <br/>
@@ -53,7 +53,7 @@ Learn how organizations manage users, computers, and network settings through Ac
 
 <p align="center"> 
 <br />
-Assigned a static IP to the internal NIC so the domain controller can act as a DNS and DHCP server on the internal network:  
+Assigned a static IP to the internal NIC so the domain controller can act as a DNS and DHCP server on the internal network: 
 <br/>
 
 <br/>
@@ -151,7 +151,7 @@ Used a PowerShell script to automate the creation of 1000 user accounts for test
 
 <p align="center">
 <br />
-Created a Windows 10 VM, connected it to the internal network, and successfully joined it to the domain:  
+Created a Windows 10 VM, connected it to the internal network, and successfully joined it to the domain:</b>  
 <br/>
 
 <br/>

@@ -35,7 +35,7 @@ Learn how organizations manage users, computers, and network settings through Ac
 <br/>
 
 <p align="center">
-DC VM configured with two NICs: NAT for internet access, Internal Network for local domain communication: 
+**Configured Windows Server 2019 VM with two network interfaces: one for external internet access (NAT), one for internal domain traffic:**
 <br/>
  
 <br/>
@@ -53,7 +53,7 @@ DC VM configured with two NICs: NAT for internet access, Internal Network for lo
 
 <p align="center"> 
 <br />
-Static IP assigned to internal NIC. This ensures the domain controller can reliably handle DNS and DHCP for the internal network:  
+Assigned a static IP to the internal NIC so the domain controller can act as a DNS and DHCP server on the internal network:  
 <br/>
 
 <br/>
@@ -66,7 +66,7 @@ Static IP assigned to internal NIC. This ensures the domain controller can relia
 
 <p align="center">
 <br />
-AD DS installed on Server 2019 to enable domain controller promotion: 
+Installed Active Directory Domain Services and promoted the server to a domain controller by creating a new forest and root domain. Logged in as the domain administrator after reboot: 
 <br/>
 
 <br/>
@@ -74,26 +74,8 @@ AD DS installed on Server 2019 to enable domain controller promotion:
 <br />
 
 <br/>
-
----
-
-<p align="center">
-<br />
-Promoting the server to a domain controller and creating a new root domain:  
-<br/>
-
-<br/>
 <img src="https://i.imgur.com/K3kTPgq.png" height="400%" width="80%" alt="Active Directory Home Lab Steps"/>
 <br />
-
-<br/>
-
----
-
-<p align="center">
-<br />
-Successfully promoted to domain controller. Logged in as domain administrator:  
-<br/>
 
 <br/>
 <img src="https://i.imgur.com/jjYboJh.png" height="400%" width="80%" alt="Active Directory Home Lab Steps"/>
@@ -105,7 +87,7 @@ Successfully promoted to domain controller. Logged in as domain administrator:
 
 <p align="center">
 <br />
-Created organizational unit to manage admin users separately from standard accounts:  
+Created an Organizational Unit (OU) for administrative accounts and added a new domain admin user with elevated privileges:  
 <br/>
 
 <br/>

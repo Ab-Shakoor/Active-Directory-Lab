@@ -49,7 +49,9 @@ DC VM configured with two NICs: NAT for internet access, Internal Network for lo
  
 <br/>
 
- 
+---
+
+<p align="center"> 
 <br />
 Static IP assigned to internal NIC. This ensures the domain controller can reliably handle DNS and DHCP for the internal network:  
 <br/>
@@ -60,6 +62,9 @@ Static IP assigned to internal NIC. This ensures the domain controller can relia
 
 <br/>
 
+---
+
+<p align="center">
 <br />
 AD DS installed on Server 2019 to enable domain controller promotion: 
 <br/>
@@ -70,6 +75,9 @@ AD DS installed on Server 2019 to enable domain controller promotion:
 
 <br/>
 
+---
+
+<p align="center">
 <br />
 Promoting the server to a domain controller and creating a new root domain:  
 <br/>
@@ -80,6 +88,9 @@ Promoting the server to a domain controller and creating a new root domain:
 
 <br/>
 
+---
+
+<p align="center">
 <br />
 Successfully promoted to domain controller. Logged in as domain administrator:  
 <br/>
@@ -90,6 +101,9 @@ Successfully promoted to domain controller. Logged in as domain administrator:
 
 <br/>
 
+---
+
+<p align="center">
 <br />
 Created organizational unit to manage admin users separately from standard accounts:  
 <br/>
@@ -100,6 +114,9 @@ Created organizational unit to manage admin users separately from standard accou
 
 <br/>
 
+---
+
+<p align="center">
 <br />
 Enabled NAT on the domain controller using Routing and Remote Access, allowing internal network clients to access the internet:
 <br/>
@@ -110,6 +127,9 @@ Enabled NAT on the domain controller using Routing and Remote Access, allowing i
 
 <br/>
 
+---
+
+<p align="center">
 <br />
 Installed DHCP Server role and created a scope to assign IP addresses automatically to internal network clients:  
 <br/>
@@ -128,6 +148,9 @@ Installed DHCP Server role and created a scope to assign IP addresses automatica
 
 <br/>
 
+---
+
+<p align="center">
 <br />
 Used a PowerShell script to automate the creation of 1000 user accounts for testing purposes:  
 <br/>
@@ -142,6 +165,9 @@ Used a PowerShell script to automate the creation of 1000 user accounts for test
 
 <br/>
 
+---
+
+<p align="center">
 <br />
 Created a Windows 10 VM, connected it to the internal network, and successfully joined it to the domain:  
 <br/>

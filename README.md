@@ -31,6 +31,13 @@ Learn how organizations manage users, computers, and network settings through Ac
 - <b>Tested login with domain account on client VM</b>
 
 
+<h2>Network Diagram:</h2>
+<br/>
+
+<p align="center">
+<img src="https://imgur.com/zmWOdUd.png" height="400%" width="80%" alt="Active Directory Home Lab Steps"/>
+
+
 <h2>Project walk-through:</h2>
 <br/>
 

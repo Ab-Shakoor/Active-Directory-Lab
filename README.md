@@ -64,7 +64,7 @@ Assigned a static IP to the internal NIC so the domain controller can act as a D
 <br/>
 
 <br/>
-<img src="https://i.imgur.com/sWXeEsx.png" height="400%" width="80%" alt="Active Directory Home Lab Steps"/>
+<img src="https://i.imgur.com/TFYrIi7.png" height="400%" width="80%" alt="Active Directory Home Lab Steps"/>
 <br />
 
 <br/>
